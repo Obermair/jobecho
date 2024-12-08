@@ -56,10 +56,11 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav alt-font">
-                                <li class="nav-item"><a href="demo-digital-agency.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="demo-digital-agency-about.html" class="nav-link">Partner</a></li>
-                                <li class="nav-item"><a href="demo-digital-agency-expertise.html" class="nav-link">So funktioniert's</a></li>
-                                <li class="nav-item"><a href="demo-digital-agency-portfolio.html" class="nav-link">Vorteile</a></li>
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="index.html#partner" class="nav-link">Partner</a></li>
+                                <li class="nav-item"><a href="index.html#funktion" class="nav-link">So funktioniert's</a></li>
+                                <li class="nav-item"><a href="index.html#vorteile" class="nav-link">Vorteile</a></li>
+                                <li class="nav-item"><a href="index.html#partner" class="nav-link">Kontakt</a></li>
                             </ul>
                         </div>
                     </div>
@@ -113,7 +114,7 @@
         </section>
         <!-- end banner -->
         <!-- start section -->
-        <section class="pb-0">
+        <section class="pb-0" >
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center" data-anime='{ "el": "childs", "translateY": [-15, 0], "scale": [1.1, 1], "opacity": [0,1], "duration": 500, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <!-- start client item -->
@@ -366,11 +367,36 @@
                                     </div>
                                 </div>
                             </div>  
+
                         </div> 
-                    </div> 
+                        
+                    </div>                                      
+                    <div class="contact-form-style-03 col-10 md-col-8 mt-25px position-relative bg-base-color z-index-1 p-8 lg-p-10 sm-p-30px box-shadow-double-large overflow-hidden last-paragraph-no-margin"> 
+                        <p class="fs-20 lh-34 mb-10px">Noch Fragen?</p>
+                        <h2 class="h1 alt-font fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px">Sag doch
+                            <span data-fancy-text='{ "effect": "rotate", "string": ["hallo!", "hallå!", "salve!", "hello!"] }'></span> 
+                        </h2> 
+                        <form action="email-templates/contact-form.php" method="post">
+                            <div class="position-relative form-group mb-20px"> 
+                                <input class="ps-0 border-radius-0px medium-gray bg-transparent border-color-light-red form-control required" type="text" name="name" placeholder="Name*" />
+                            </div>
+                            <div class="position-relative form-group mb-20px"> 
+                                <input class="ps-0 border-radius-0px medium-gray bg-transparent border-color-light-red form-control required" type="email" name="email" placeholder="Email*" />
+                            </div>
+                            <div class="position-relative z-index-1 form-group form-textarea mt-15px mb-0"> 
+                                <textarea class="ps-0 border-radius-0px medium-gray bg-transparent border-color-light-red form-control" name="comment" placeholder="Gib hier deine Nachricht ein" rows="3"></textarea>
+                                <input type="hidden" name="redirect" value="">
+                                <button class="btn btn-medium btn-dark-gray btn-round-edge btn-box-shadow mb-20px mt-25px submit w-100" type="submit">Nachricht senden<i class="fa-regular fa-envelope"></i></button>
+                                <p class="fs-13 lh-22 w-90 md-w-100">Ich verstehe, dass meine Daten gemäß der <a class="text-decoration-line-bottom text-dark-gray text-dark-gray-hover fw-500" href="#">Datenschutzrichtlinie</a> sicher aufbewahrt werden.</p>
+                                <div class="form-results mt-20px d-none"></div>
+                            </div>
+                        </form>  
                 </div>
             </div>
         </section>
+        <!-- end section -->
+         <!-- start section -->
+
         <!-- end section -->
         <!-- start section -->
         <section class="half-section pb-0">
@@ -412,64 +438,19 @@
         <!-- start footer -->
         <footer class="pb-0">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-xl-3 col-lg-12 col-md-6 d-flex flex-column lg-mb-30px sm-mb-20px order-md-1">
-                        <a href="demo-digital-agency.html" class="footer-logo d-inline-block lg-mb-30px">
-                            <img src="images/demo-digital-agency-footer-logo.jpg" data-at2x="images/demo-digital-agency-footer-logo@2x.jpg" alt="">
-                        </a>
-                        <div class="elements-social social-text-style-01 mt-auto">
-                            <ul class="small-icon dark fw-600">
-                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank">Fb.</a></li>
-                                <li><a class="instagram" href="http://www.instagram.com" target="_blank">Ig.</a></li> 
-                                <li><a class="twitter" href="http://www.twitter.com" target="_blank">Tw.</a></li> 
-                                <li><a class="behance" href="http://www.behance.com/" target="_blank">Be.</a></li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-4 col-md-6 last-paragraph-no-margin order-lg-2 order-md-3 sm-mb-20px">
-                        <span class="fs-14 fw-600 d-block text-dark-gray text-dark-gray text-uppercase">Rotterdam</span>
-                        <p><strong class="text-dark-gray fw-600">Crafto digital media.</strong> <br>Graaf florisstraat 22A, Netherlands.</p>
-                        <span class="fs-14 fw-600 d-block text-dark-gray text-dark-gray text-uppercase">Barcelona</span>
-                        <p><strong class="text-dark-gray fw-600">Crafto digital media. </strong> <br>365 Grand via de coarts, Barcelona.</p>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-4 col-md-6 last-paragraph-no-margin order-md-4 sm-mb-30px">
-                        <span class="fs-14 fw-600 d-block text-dark-gray text-dark-gray text-uppercase">Work inquiries</span>
-                        <p class="mb-0">Interested in working with us? </p>
-                        <a href="mailto:hello@yourdomain.com" class="text-dark-gray text-decoration-line-bottom fw-600 mb-50px sm-mb-30px d-inline-block">hello@yourdomain.com</a>
-                        <span class="fs-14 fw-600 d-block text-dark-gray text-dark-gray text-uppercase">Work with us</span>
-                        <p class="mb-0">Looking for a job opportunity?</p>
-                        <a href="mailto:hr@yourdomain.com" class="text-dark-gray text-decoration-line-bottom fw-600 d-inline-block">hr@yourdomain.com</a>
-                    </div>
-                    <div class="col-12 col-lg-3 col-xl-3 col-lg-4 col-md-6 order-lg-4 order-md-2 md-mb-30px sm-mb-0">
-                        <span class="fs-14 fw-600 d-block text-dark-gray mb-15px text-dark-gray text-uppercase">Sign up for the newsletter</span> 
-                        <div class="d-inline-block w-100 newsletter-style-02 position-relative mb-10px">
-                            <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
-                                <input class="input-small border-color-extra-medium-gray w-100 form-control required" type="email" name="email" placeholder="Enter your email...">
-                                <input type="hidden" name="redirect" value="">
-                                <button type="submit" class="btn submit" aria-label="submit"><i class="icon bi bi-envelope icon-small text-dark-gray"></i></button>
-                                <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
-                            </form>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="d-inline-block fs-15"><i class="line-icon-Handshake me-10px align-middle icon-extra-medium"></i>Protecting your privacy</div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center pt-5 sm-pt-35px">
+                <div class="row justify-content-center align-items-center">
                     <!-- start divider -->
                     <div class="col-12">
                         <div class="divider-style-03 divider-style-03-01 border-color-extra-medium-gray"></div>
                     </div>
                     <!-- end divider -->
-                    <!-- start copyright -->
-                    <div class="col-lg-5 pt-15px pb-15px md-pt-0 fs-15 order-2 order-lg-1 text-center text-lg-start last-paragraph-no-margin"><p>© 2024 Crafto is Proudly Powered by <a href="https://www.themezaa.com/" target="_blank" class="text-dark-gray fw-500 text-decoration-line-bottom">ThemeZaa</a></p></div>
-                    <!-- end copyright -->
+
                     <!-- start footer menu -->
-                    <div class="col-lg-7 pt-15px pb-15px md-pb-5px fs-15 order-1 order-lg-2 text-center text-lg-end">
+                    <div class="col-lg-6 pt-15px pb-15px md-pb-5px fs-15 order-1 order-lg-2 text-center">
                         <ul class="footer-navbar sm-lh-normal"> 
-                            <li><a href="#" class="nav-link">Privacy policy</a></li>
-                            <li><a href="#" class="nav-link">Terms and conditions</a></li>
-                            <li><a href="#" class="nav-link">Copyright</a></li>
+                            <li><a href="#" class="nav-link">Datenschutzerklärung</a></li>
+                            <li><a href="#" class="nav-link">AGB</a></li>
+                            <li><a href="#" class="nav-link">Impressum</a></li>
                         </ul>
                     </div>
                     <!-- end footer menu -->
