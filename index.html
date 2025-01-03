@@ -371,6 +371,8 @@
             </div>
         </section>
         <!-- end section -->
+         <!-- modify this form HTML as you wish and place wherever you want your form -->
+
         <!-- start section -->
         <section id="preise">
             <div class="container">
@@ -384,10 +386,14 @@
                         <div class="position-sticky top-120px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                             <p class="w-75 lg-w-100 mb-40px">Unsere Plattform befindet sich aktuell in der Entwicklungsphase. Hinterlegen Sie hier einfach Ihre Mail und wir informieren Sie sobald unsere Plattform für Sie zur Verfügung steht.</p>
                             <div class="d-inline-block w-60 mt-5px newsletter-style-02 position-relative">
-                                <form action="https://formcarry.com/s/2v8UZG2sOgM" method="POST" enctype="multipart/form-data" class="position-relative w-100">
+                                <form
+                                    action="https://formcarry.com/s/2v8UZG2sOgM"
+                                    method="POST"
+                                    enctype="multipart/form-data"
+                                    >
                                     <input class="input-small border-color-extra-medium-gray w-100 form-control required" type="email" name="email" placeholder="Gib hier deine Mail ein...">
                                     <input type="hidden" name="redirect" value="">
-                                    <button type="submit" class="btn submit" aria-label="submit"><i class="icon bi bi-envelope icon-small text-dark-gray"></i></button>
+                                    <button type="submit" class="btn"><i class="icon bi bi-envelope icon-small text-dark-gray"></i></button>
                                     <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
                                 </form>
                             </div>
@@ -476,7 +482,7 @@
                         <h2 class="h1 alt-font fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px">Sag doch
                             <span data-fancy-text='{ "effect": "rotate", "string": ["hallo!", "hallå!", "salve!", "hello!"] }'></span> 
                         </h2> 
-                        <form action="https://formcarry.com/s/OVDTaynaWGU" method="POST" enctype="multipart/form-data">
+                        <form id="applicationForm" action="https://formcarry.com/s/OVDTaynaWGU" method="POST" enctype="application/x-www-form-urlencoded">
                             <div class="position-relative form-group mb-20px"> 
                                 <input class="ps-0 border-radius-0px medium-gray bg-transparent border-color-light-red form-control required" type="text" name="name" placeholder="Name*" />
                             </div>
@@ -485,8 +491,7 @@
                             </div>
                             <div class="position-relative z-index-1 form-group form-textarea mt-15px mb-0"> 
                                 <textarea class="ps-0 border-radius-0px medium-gray bg-transparent border-color-light-red form-control" name="comment" placeholder="Gib hier deine Nachricht ein" rows="3"></textarea>
-                                <input type="hidden" name="redirect" value="">
-                                <button class="btn btn-medium btn-dark-gray btn-round-edge btn-box-shadow mb-20px mt-25px submit w-100" type="submit">Nachricht senden<i class="fa-regular fa-envelope"></i></button>
+                                <button class="btn btn-medium btn-dark-gray btn-round-edge btn-box-shadow mb-20px mt-25px w-100" type="submit">Nachricht senden<i class="fa-regular fa-envelope"></i></button>
                                 <p class="fs-13 lh-22 w-90 md-w-100">Ich verstehe, dass meine Daten gemäß der <a class="text-decoration-line-bottom text-dark-gray text-dark-gray-hover fw-500" href="#">Datenschutzrichtlinie</a> sicher aufbewahrt werden.</p>
                                 <div class="form-results mt-20px d-none"></div>
                             </div>
