@@ -89,6 +89,7 @@ Table of contents
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth !important;
 }
 body {
   font-family: var(--primary-font);
@@ -103,6 +104,7 @@ body {
 section {
   padding-top: 110px;
   padding-bottom: 110px;
+  scroll-behavior: smooth !important;
 }
 section.half-section {
   padding-top: 70px;
